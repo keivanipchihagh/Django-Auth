@@ -1,6 +1,5 @@
 from authentication.models import User
 from rest_framework import serializers
-import datetime
 
 class UserSerializer(serializers.ModelSerializer):
 

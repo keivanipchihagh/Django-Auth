@@ -99,9 +99,9 @@ REST_FRAMEWORK = {
 }
 
 REST_KNOX = {
-    'SECURE_HASH_ALGORITHM': 'cryptography.hazmat.primitives.hashes.MD5',
+    'SECURE_HASH_ALGORITHM': 'cryptography.hazmat.primitives.hashes.SHA512',
     'AUTH_TOKEN_CHARACTER_LENGTH': 64,
-    'TOKEN_TTL': timedelta(days = 3),
+    'TOKEN_TTL': timedelta(days = 1),
     'USER_SERIALIZER': 'knox.serializers.UserSerializer',
     'TOKEN_LIMIT_PER_USER': None,
     'AUTO_REFRESH': False,

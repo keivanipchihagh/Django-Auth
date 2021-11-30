@@ -63,6 +63,12 @@ class User(AbstractUser):
         verbose_name = 'Birth Date'
     )
 
+    photo_dir = models.CharField(
+        max_length = 200,
+        null = True,
+        blank = True,
+    )
+
     USERNAME_FIELD = 'email_address'
     REQUIRED_FIELDS = ['username']
 

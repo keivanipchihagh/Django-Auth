@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "95c594e3-296b-48a9-95a9-c1a984168619",
+		"name": "django-auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user-register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Kiana",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ipchi Hagh",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "kianaipchihagh",
+							"type": "text"
+						},
+						{
+							"key": "email_address",
+							"value": "kianaipchihagh@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "09482340517",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "2021-11-11",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/api/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"api",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "keivanipchihagh@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
